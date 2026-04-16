@@ -13,6 +13,84 @@ body {
   font-weight: 800;
 }
 
-.section__title {
+/* tags */
+.section__tag {
+  color: var(--accent);
+  font-size: clamp(0.6rem, 2vw, 2rem);
+  letter-spacing: 0.5px;
+}
+
+/* labels */
+.section__label {
+  font-style: italic;
+  font-size: clamp(0.7rem, 1vw, 1.5rem);
+  color: var(--muted-2);
+}
+
+/* accent text */
+.section__accent {
+  color: var(--accent);
+}
+
+/* text highlights */
+.text--highlight {
+  color: #ffffff;
+}
+/* home title */
+.section__title-primary {
   font-family: var(--font-display);
+  line-height: 0.95;
+  font-weight: 800;
+  font-size:  clamp(2.5rem, 9vw, 6.8rem);
+}
+
+.section__title-line--secondary {
+  color: var(--muted-2)
+}
+
+.section__title-line--dot {
+  color: var(--accent);
+}
+
+/* home desc */
+.section__text {
+  font-size: clamp(0.5rem, 3vw, 4rem);
+  color: var(--muted);
+}
+
+/* about section */
+.section__title-secondary {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.section__text {
+  font-size: clamp(0.8rem, 3vw, 4rem);
+  margin-block: 1rem;
+}
+
+.section__stat {
+  line-height: 1.7;
+}
+
+.section__stat-label {
+  color: var(--muted-2);
+  font-size: clamp(0.66rem, 1.5vw, 1.7rem);
+  letter-spacing: 0.1em;
+}
+
+.section__stat-value {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.section__stat-value--large {
+  font-size: 1.6rem;
+}
+
+.section__stat-suffix {
+  font-size: 0.7rem;
+  color: var(--accent);
 }
