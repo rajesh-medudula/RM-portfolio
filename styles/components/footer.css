@@ -1,0 +1,9 @@
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5%;
+  gap: 0.8rem;
+}

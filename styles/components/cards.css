@@ -12,3 +12,35 @@
 }
 
 
+/* works - projects */
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+
+.work__item {
+  display: flex;
+  border-block: 1px solid var(--border);
+  padding-block: 1.5rem;
+  gap: 1rem;
+}
+
+.work__content {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.work__tags {
+  display: flex;
+  margin-top: 0.4rem;
+  gap: 0.4rem;
+}
+
+.work__tag {
+  padding: 1px 10px;
+  text-align: center;
+  border: 1px solid var(--border);
+}

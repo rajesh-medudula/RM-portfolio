@@ -13,6 +13,7 @@
 @import url('./components/cursor.css');
 @import url('./components/cards.css');
 @import url('./components/tags.css');
+@import url('./components/footer.css');
 
 /* ===== ANIMATIONS ===== */
 @import url('./animations/reveal.css');

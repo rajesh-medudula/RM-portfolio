@@ -85,3 +85,36 @@
 .section--projects {
   padding-block: 4rem;
 }
+
+/* section - contact */
+.section--contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 4rem;
+}
+
+.section__intro {
+  margin-bottom: 1rem;
+}
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section__email {
+    border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+
