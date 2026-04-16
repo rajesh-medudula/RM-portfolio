@@ -1,0 +1,46 @@
+/* header */
+.header {
+  width: 100%;
+  height: 50px;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.header.scrolled {
+  background-color: rgba(13, 11, 20, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid var(--border);
+}
+
+/* nav */
+.header__menu {
+  display: none;
+}
+
+/* logo */
+
+/* humburger */
+.header__toggle-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header__toggle-sidebar span{
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--text);
+}
+
+.header__toggle-sidebar span:nth-child(2) {
+  background-color: var(--muted);
+}
