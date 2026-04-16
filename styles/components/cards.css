@@ -1,0 +1,14 @@
+/* section - stack */
+.stack__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1rem;
+  background-color: var(--bg);
+}
+
+.stack__item:hover {
+  background-color: transparent;
+}
+
+
