@@ -46,6 +46,10 @@
 }
 
 @media (min-width: 900px) {
+  .header {
+    padding-block: 2.2rem;
+  }
+
   .header__toggle-sidebar {
     display: none;
   }

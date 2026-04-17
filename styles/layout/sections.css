@@ -108,6 +108,7 @@
   justify-content: center;
   text-align: center;
   padding-block: 4rem;
+  border-bottom: none;
 }
 
 .section__intro {
@@ -117,7 +118,10 @@
 .section__container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+}
+
+.section--about .section__container {
+    gap: 10rem;
 }
 
 .section--contact .section__container {
