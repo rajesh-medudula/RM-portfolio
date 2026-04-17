@@ -16,8 +16,8 @@ body {
 /* tags */
 .section__tag {
   color: var(--accent);
-  font-size: clamp(0.6rem, 2vw, 2rem);
-  letter-spacing: 0.5px;
+  font-size: clamp(0.5rem, 1.6vw, 0.7rem);
+  letter-spacing: 1.5px;
 }
 
 /* labels */
@@ -41,7 +41,7 @@ body {
   font-family: var(--font-display);
   line-height: 0.95;
   font-weight: 800;
-  font-size:  clamp(2.3rem, 9vw, 6.8rem);
+  font-size:  clamp(2.1rem, 8.5vw, 6rem);
 }
 
 .section__title-line--secondary {
@@ -53,21 +53,29 @@ body {
 }
 
 /* home desc */
-.section__text {
-  font-size: clamp(0.5rem, 3vw, 4rem);
+.section__text--primary {
+  font-size: clamp(0.5rem, 2.1vw, 1rem);
   color: var(--muted);
+}
+
+/* scroll hint */
+.section__scroll-text {
+  color: var(--muted-2);
+  letter-spacing: 1.5px;
 }
 
 /* about section */
 .section__title-secondary {
   font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 4vw, 3rem);
   line-height: 1;
 }
 
-.section__text {
-  font-size: clamp(0.8rem, 3vw, 4rem);
+.section__text--secondary {
+  font-size: clamp(0.75rem, 2vw, 1rem);
   margin-block: 1rem;
+    color: var(--muted);
+
 }
 
 .section__stat {
@@ -76,22 +84,22 @@ body {
 
 .section__stat-label {
   color: var(--muted-2);
-  font-size: clamp(0.66rem, 1.5vw, 1.7rem);
-  letter-spacing: 0.1em;
+  font-size: clamp(0.55rem, 1.4vw, 1.5rem);
+  letter-spacing: 1.5px;
 }
 
 .section__stat-value {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 2.8vw, 1.3rem);
   font-weight: 700;
 }
 
 .section__stat-value--large {
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 3.5vw, 2.5rem);
 }
 
 .section__stat-suffix {
-  font-size: 0.7rem;
+  font-size: clamp(0.5rem, 2vw, 0.9rem);
   color: var(--accent);
 }
 
@@ -104,7 +112,7 @@ body {
 }
 
 .stack__name {
-  font-size: clamp(0.7rem, 1vw, 2rem);
+  font-size: clamp(0.8rem, 1vw, 2rem);
 }
 
 .stack__level {
@@ -114,7 +122,7 @@ body {
 }
 
 .section__note {
-  font-size: clamp(0.7rem, 2vw, 2rem);
+  font-size: clamp(0.7rem, 2.1vw, 0.8rem);
   font-style: italic;
   color: var(--muted-2);
 }
@@ -128,16 +136,16 @@ body {
 
 .work__title {
   font-family: var(--font-display);
-  font-size: clamp(0.9rem, 4vw, 3rem);
+  font-size: clamp(0.9rem, 2.4vw, 2.5rem);
 }
 
 .work__desc {
   color: var(--muted);
-  font-size: clamp(0.7rem, 2vw, 1.9rem);
+  font-size: clamp(0.7rem, 1.5vw, 1.4rem);
 }
 
 .work__tag {
-  font-size: clamp(0.6rem, 2vw, 1rem);
+  font-size: clamp(0.5rem, 2vw, 0.7rem);
   color: var(--muted);
 }
 
@@ -145,22 +153,43 @@ body {
   color: var(--muted-2);
 }
 
-/* section - social */
-.section__email {
+/* section - contact */
+.section--contact .section__text--secondary {
+  max-width: 41ch;
+}
+
+.section__email--text {
   font-family: var(--font-display);
+  font-size: clamp(1.1rem, 3vw, 3rem);
 }
 
 .section__social-link {
-  font-size: clamp(0.6rem, 2vw, 1rem);
+  font-size: clamp(0.6rem, 1.5vw, 1rem);
   color: var(--muted);
 }
 
 /* footer */
 .footer__text {
-  font-size: clamp(0.6rem, 2vw, 2rem);
+  font-size: clamp(0.6rem, 1vw, 1rem);
   color: var(--muted-2);
 }
 
 .footer__highlight {
   color: var(--accent);
+}
+
+@media (min-width: 600px) {
+  .section__text--primary {
+    width: 50ch;
+  }
+
+  .section--contact .section__text--secondary {
+    margin-bottom: 1.5rem;
+  }
+  
+  .work__item:hover {
+    .work__index-text, .work__link-arrow, .work__tag {
+      color: var(--accent-soft);
+    }
+  }
 }

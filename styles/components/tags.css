@@ -8,8 +8,14 @@
 
 .section__tag::before {
   content: '';
-  width: 24px;
+  width: 23px;
   height: 1px;
-  background-color: var(--accent);  
+  background-color: var(--accent); 
+  opacity: 0.5;
 }
 
+@media (min-width: 600px) {
+  .section__tag {
+    margin-bottom: 2rem;
+  }
+}

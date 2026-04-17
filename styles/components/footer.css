@@ -4,6 +4,19 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 5%;
-  gap: 0.8rem;
+  padding: 1rem 5%;
+  gap: 0.25rem;
+}
+
+
+.section__email--text {
+    border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 600px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

@@ -17,11 +17,11 @@
 
       <nav class="header__nav header__nav--mobile">
         <ul class="header__menu header__menu--mobile">
-          <li><a class="header__link" href="#">home</a></li>
-          <li><a class="header__link" href="#">about</a></li>
-          <li><a class="header__link" href="#">stack</a></li>
-          <li><a class="header__link" href="#">projects</a></li>
-          <li><a class="header__link" href="#">contact</a></li>
+          <li><a class="header__link" href="#home">home</a></li>
+          <li><a class="header__link" href="#about">about</a></li>
+          <li><a class="header__link" href="#tech">stack</a></li>
+          <li><a class="header__link" href="#works">projects</a></li>
+          <li><a class="header__link" href="#contact">contact</a></li>
         </ul>
         <button class="header__toggle-sidebar">
           <span></span>
@@ -34,7 +34,7 @@
     <!-- main -->
     <main class="main">
       <!-- section-home -->
-      <section class="section section--home">
+      <section class="section section--home" id="home">
         <!-- background -->
         <div class="section__grid-pattern"></div>
         <div class="section__grid-glow"></div>
@@ -59,7 +59,7 @@
 
         <!-- description -->
         <div class="section__description">
-          <p class="section__text">
+          <p class="section__text section__text--primary">
             Web developer crafting fast, accessible, and beautifully minimal
             digital experiences.
           </p>
@@ -79,7 +79,7 @@
       </section>
 
       <!-- section-about -->
-      <section class="section section--about">
+      <section class="section section--about" id="about">
         <div class="section__intro">
           <p class="section__label">01 — About</p>
 
@@ -91,20 +91,20 @@
         <div class="section__container">
           <!-- content -->
           <div class="section__content">
-            <p class="section__text">
+            <p class="section__text section__text--secondary">
               Hi, I'm <span class="text--highlight">Rajesh Medudula</span> — a web developer based
               in [Your City]. I specialize in building modern, performant web
               applications with a focus on clean code and thoughtful design.
             </p>
 
-            <p class="section__text">
+            <p class="section__text section__text--secondary">
               I've been writing code for <span class="text--highlight">X years</span>, working
               across the full stack but leaning heavily towards the front end. I
               care deeply about the intersection of great engineering and great
               user experience.
             </p>
 
-            <p class="section__text">
+            <p class="section__text section__text--secondary">
               When I'm not coding, you'll find me [your hobby / interest here].
             </p>
           </div>
@@ -140,7 +140,7 @@
         </div>
       </section>
       <!-- section stack -->
-      <section class="section section--stack">
+      <section class="section section--stack" id="tech">
         <div class="section__intro">
           <p class="section__label">02 — Tech Stack</p>
 
@@ -190,6 +190,12 @@
           <!-- tool -->
           <div class="stack__item">
             <div class="stack__indicator"></div>
+              <p class="stack__name">GIT / GIT HUB</p>
+              <p class="stack__level">Expert</p>
+          </div>
+          <!-- tool -->
+          <div class="stack__item">
+            <div class="stack__indicator"></div>
               <p class="stack__name">DOM APIs</p>
               <p class="stack__level">Intermediate</p>
           </div>
@@ -224,7 +230,7 @@
         </p>
       </section>
       <!-- section projects -->
-      <section class="section section--projects">
+      <section class="section section--projects" id="works">
         <!-- intro -->
         <div class="section__intro">
           <p class="section__label">03 — Projects</p>
@@ -338,7 +344,7 @@
         </div>
       </section>
 
-      <section class="section section--contact">
+      <section class="section section--contact" id="contact">
         <!-- intro -->
         <div class="section__intro">
           <p class="section__label section__label--center">04 — Contact</p>
@@ -350,13 +356,13 @@
 
         <!-- main -->
         <div class="section__container">
-          <p class="section__text">
+          <p class="section__text section__text--secondary">
             I'm currently open to new opportunities. Whether it's a project, a
             role, or just a conversation — my inbox is always open.
           </p>
 
-          <h3>
-            <span class="section__email">you@gmail.com</span>
+          <h3 class="section__email">
+            <span class="section__email--text">medudularajesh10@gmail.com</span>
           </h3>
 
           <ul class="section__social">
