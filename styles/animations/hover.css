@@ -1,3 +1,4 @@
+/* stack hover */
 .stack__item:hover {
   background-color: transparent;
 }
@@ -6,25 +7,43 @@
   background-color: var(--accent);
 }
 
+/* header hover */
 .header__link:hover {
   color: #fff;
 }
 
 .header__link:hover::after {
-  transform: scale(1);
+  transform       : scale(1);
   transform-origin: left;
 }
 
-  .work__item:hover {
-    background-color: rgba(181, 123, 255, 0.03);
-  }
+/* sidebar hover */
+.sidebar__link:hover {
+  color: var(--accent);
+}
 
-  .work__item:hover .work__link-arrow {
-    opacity: 1;
-  }
+/* work hover */
+.work__item:hover {
+  background-color: rgba(181, 123, 255, 0.03);
+}
 
-  .work__item:hover .work__index-text,
-  .work__item:hover .work__link-arrow,
-  .work__item:hover .work__tag {
-    color: var(--accent-soft);
-  }
+.work__item:hover .work__link-arrow {
+  opacity: 1;
+}
+
+.work__item:hover .work__index-text,
+.work__item:hover .work__link-arrow,
+.work__item:hover .work__tag {
+  color: var(--accent-soft);
+}
+
+/* button hover */
+.btn--primary:hover {
+  background-color: var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+.btn--ghost:hover {
+  color       : #fff;
+  border-color: var(--border-hover);
+}

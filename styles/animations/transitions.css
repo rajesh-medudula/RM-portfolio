@@ -1,3 +1,4 @@
+/* element transitions */
 .stack__item {
   transition: all 0.3s ease;
 }
@@ -16,6 +17,22 @@
 
 .header__link::after {
   transition: transform 0.4s ease;
+}
+
+.header__toggle-sidebar span {
+  transition: all 0.3s ease;
+}
+
+.sidebar__link {
+  transition: color 0.3s ease;
+}
+
+.sidebar {
+  transition: transform 0.4s ease;
+}
+
+.btn {
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 600px) {

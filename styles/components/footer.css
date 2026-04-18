@@ -1,3 +1,4 @@
+/* footer layout */
 footer {
   display        : flex;
   flex-direction : column;
@@ -7,6 +8,7 @@ footer {
   gap            : var(--space-1);
 }
 
+/* email accent in footer/contact area */
 .section__email--text {
   border-bottom : 2px solid var(--accent);
   padding-bottom: var(--space-3);

@@ -1,7 +1,8 @@
+/* section tag layout / decoration */
 .section__tag {
-  display    : inline-flex;
-  gap        : var(--space-3);
-  align-items: center;
+  display      : inline-flex;
+  gap          : var(--space-3);
+  align-items  : center;
   margin-bottom: var(--space-5);
 }
 

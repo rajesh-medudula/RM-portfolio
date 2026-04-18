@@ -1,19 +1,17 @@
-/* ================= RESET / NORMALIZE ================= */
-
-/* Box sizing */
+/* box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margins */
+/* remove default margins */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* HTML & Body */
+/* html & body */
 html {
   scroll-behavior: smooth;
 }
@@ -27,7 +25,7 @@ body {
   flex-direction: column;
 }
 
-/* Media elements */
+/* media elements */
 img,
 picture,
 video,
@@ -37,7 +35,7 @@ svg {
   max-width: 100%;
 }
 
-/* Form elements */
+/* form elements */
 input,
 button,
 textarea,
@@ -48,30 +46,30 @@ select {
   background: none;
 }
 
-/* Buttons */
+/* buttons */
 button {
   cursor: pointer;
 }
 
-/* Links */
+/* links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* Lists */
+/* lists */
 ul,
 ol {
   list-style: none;
 }
 
-/* Tables */
+/* tables */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* Remove default focus outline (we'll customize later) */
+/* focus */
 :focus {
   outline: none;
 }
