@@ -120,9 +120,6 @@
   flex-direction: column;
 }
 
-.section--about .section__container {
-    gap: 10rem;
-}
 
 .section--contact .section__container {
   align-items: center;

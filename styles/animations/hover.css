@@ -1,0 +1,30 @@
+.stack__item:hover {
+  background-color: transparent;
+}
+
+.stack__item:hover .stack__indicator {
+  background-color: var(--accent);
+}
+
+.header__link:hover {
+  color: #fff;
+}
+
+.header__link:hover::after {
+  transform: scale(1);
+  transform-origin: left;
+}
+
+  .work__item:hover {
+    background-color: rgba(181, 123, 255, 0.03);
+  }
+
+  .work__item:hover .work__link-arrow {
+    opacity: 1;
+  }
+
+  .work__item:hover .work__index-text,
+  .work__item:hover .work__link-arrow,
+  .work__item:hover .work__tag {
+    color: var(--accent-soft);
+  }

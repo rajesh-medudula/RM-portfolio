@@ -1,21 +1,20 @@
-/* home tag */
 .section__tag {
-  display: inline-flex;
-  gap: 0.5rem;
+  display    : inline-flex;
+  gap        : var(--space-3);
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-5);
 }
 
 .section__tag::before {
-  content: '';
-  width: 23px;
-  height: 1px;
-  background-color: var(--accent); 
-  opacity: 0.5;
+  content         : '';
+  width           : 23px;
+  height          : 1px;
+  background-color: var(--accent);
+  opacity         : 0.5;
 }
 
 @media (min-width: 600px) {
   .section__tag {
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-9);
   }
 }

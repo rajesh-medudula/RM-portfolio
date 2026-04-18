@@ -1,22 +1,212 @@
+.main {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
+}
 
-/* section - about */
-.section--about, .section__container {
+.section {
+  width        : 100%;
+  border-bottom: 1px solid var(--border);
+  padding      : 0 var(--space-9);
+}
+
+.section--home {
+  position  : relative;
+  min-height: 100svh;
+  display   : flex;
+  align-items: center;
+}
+
+.section__grid-pattern {
+  position        : absolute;
+  inset           : 0;
+  background-image: 
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size : 80px 80px;
+  mask-image      : radial-gradient(ellipse 70% 60% at 80% 50%, black 0%, transparent 80%);
+  z-index         : -1;
+  pointer-events  : none;
+}
+
+.section__grid-glow {
+  position      : absolute;
+  width         : 260px;
+  height        : 260px;
+  right         : 0%;
+  top           : 10%;
+  border-radius : 50%;
+  pointer-events: none;
+  z-index       : -1;
+  background    : radial-gradient(circle, rgba(180, 123, 255, 0.11) 0%, transparent 70%);
+}
+
+.section__title-container {
+  max-width     : 1100px;
+  display       : flex;
+  flex-direction: column;
+  margin        : 0 auto;
+  align-self    : center;
+  gap           : var(--space-7);
+}
+
+.section__scroll {
+  display: none;
+}
+
+.section--about,
+.section__container {
   display: grid;
-  gap: 1rem;
+  gap    : var(--space-5);
+}
+
+.section--about {
+  max-width  : 1100px;
+  padding-block: 4rem;
 }
 
 .section__intro {
-  display: grid;
-  gap: 7px;
+  display      : grid;
+  gap          : 7px;
+  margin-bottom: var(--space-5);
 }
 
-/* section - stack */
+.section__title-secondary span {
+  display: block;
+}
+
+.section__stat {
+  display       : flex;
+  flex-direction: column;
+  min-height    : 50px;
+  gap           : var(--space-1);
+  border-bottom : 1px solid var(--border);
+  padding-block : var(--space-5);
+  margin-block  : var(--space-3);
+}
+
 .stack {
-  display: grid;
+  display              : grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  gap: 1px;
-  margin: 1rem 0;
-  background-color: var(--border);
+  border               : 1px solid var(--border);
+  border-radius        : var(--radius-sm);
+  gap                  : 1px;
+  margin               : var(--space-5) 0;
+  background-color     : var(--border);
+}
+
+.section--stack {
+  width         : 100%;
+  max-width     : 1100px;
+  display       : flex;
+  flex-direction: column;
+  padding-block : 4rem;
+  gap           : var(--space-5);
+}
+
+.section--projects {
+  width    : 100%;
+  max-width: 1100px;
+  padding-block: 4rem;
+}
+
+.section--contact {
+  max-width      : 1100px;
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+  text-align     : center;
+  padding-block  : 4rem;
+  border-bottom  : none;
+}
+
+.section__container {
+  display       : flex;
+  flex-direction: column;
+}
+
+.section--about .section__container {
+  column-gap: 4rem;
+}
+
+.section--contact .section__container {
+  align-items: center;
+}
+
+.section__social {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  gap            : var(--space-5);
+}
+
+.section__title-secondary .section__accent--linear {
+  display: inline;
+}
+
+@media (min-width: 600px) {
+  .section__scroll {
+    display : inline-flex;
+    align-items: center;
+    position: absolute;
+    left    : 3.5rem;
+    bottom  : 3.5rem;
+    padding : var(--space-5);
+  }
+
+  .section__scroll::before {
+    content         : '';
+    width           : 1px;
+    height          : 50px;
+    position        : absolute;
+    left            : 0;
+    background-color: var(--muted-2);
+    opacity         : 0.7;
+    border-radius   : 50%;
+  }
+
+  .section__grid-glow {
+    top   : 0;
+    bottom: 10%;
+    margin: auto;
+    height: 500px;
+    width : 500px;
+  }
+
+  .section__title-container {
+    gap: 2.5rem;
+  }
+
+  .section__stat {
+    flex-direction : row;
+    align-items    : center;
+    justify-content: space-between;
+  }
+
+  .section--contact {
+    padding-block    : 7rem;
+    padding-block-end: 10rem;
+    gap              : var(--space-7);
+  }
+
+  .section__social {
+    gap: var(--space-7);
+  }
+}
+
+@media (min-width: 900px) {
+  .section {
+    padding: 7rem 4rem;
+  }
+
+  .section--about .section__container {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .section__stats {
+    align-self: self-start;
+  }
 }
