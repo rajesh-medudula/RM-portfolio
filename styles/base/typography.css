@@ -31,12 +31,14 @@ body {
 }
 
 /* sidebar */
-.sidebar__menu {
-  font-family: var(--font-display);
+
+.sidebar__link {
+    font-family: var(--font-display);
   text-transform: capitalize;
   font-size: var(--text-2xl);
   font-weight: 700;
   color: var(--muted);
+  transition: color 0.3s ease;
 }
 
 .sidebar__link:hover {
