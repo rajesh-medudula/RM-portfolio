@@ -47,3 +47,9 @@
   color       : #fff;
   border-color: var(--border-hover);
 }
+
+/* email - contact */
+.section__email:hover {
+  color: var(--accent-soft);
+  cursor: pointer;
+}

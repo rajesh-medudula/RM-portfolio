@@ -12,6 +12,11 @@
 }
 
 /* html & body */
+html, body {
+  cursor: none;
+
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -55,6 +60,7 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 /* lists */

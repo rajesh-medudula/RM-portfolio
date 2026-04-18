@@ -32,7 +32,7 @@
   --text-sm-l: clamp(0.7rem,  1.35vw, 0.9rem);
   --text-base: clamp(0.8rem,  1.5vw,   1rem);
   --text-md  : clamp(0.9rem,  2.4vw, 1.125rem);
-  --text-lg  : clamp(1.3rem,    2.8vw, 1.5rem);
+  --text-lg  : clamp(1.6rem,  4.2vw, 2.6rem);
   --text-xl  : clamp(1.25rem, 3vw,   2rem);
   --text-2xl : clamp(1.5rem,  4vw,   3rem);
   --text-3xl : clamp(2.1rem,  8.5vw, 6rem);

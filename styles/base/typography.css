@@ -153,14 +153,23 @@ body {
   max-width: 41ch;
 }
 
+.section__email {
+    margin-bottom: var(--space-10);
+}
+
 .section__email--text {
   font-family: var(--font-display);
-  font-size  : var(--text-md);
+  font-size  : var(--text-sm);
+  letter-spacing: 0.5px;
 }
 
 .section__social-link {
   font-size: var(--text-xs);
   color    : var(--muted);
+}
+
+.section__social-link:hover {
+  color: var(--accent);
 }
 
 /* footer */
@@ -209,6 +218,10 @@ body {
     font-size: 1.2rem;
   }
 
+  .section__title-secondary {
+    font-size: calc(var(--text-lg) + 0.3rem);
+  }
+
   .section__text--primary {
     width: 50ch;
   }
@@ -225,6 +238,10 @@ body {
     opacity  : 0;
     font-size: 1.5rem;
   }
+
+  .section__email--text {
+    font-size: var(--text-xl);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -237,6 +254,10 @@ body {
 
   .section__title-secondary {
     font-size: calc(var(--text-lg) + 1rem);
+  }
+
+  .section__email--text {
+    font-size: var(--text-xl);
   }
 }
 

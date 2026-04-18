@@ -30,6 +30,7 @@
   border-block : 1px solid var(--border);
   padding-block: 1.5rem;
   gap          : var(--space-5);
+  cursor: none;
 }
 
 .work__content {

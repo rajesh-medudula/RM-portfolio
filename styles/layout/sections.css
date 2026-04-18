@@ -77,7 +77,6 @@
 .section__intro {
   display      : grid;
   gap          : 7px;
-  margin-bottom: var(--space-5);
 }
 
 .section__title-secondary span {
@@ -198,5 +197,9 @@
 @media (min-width: 900px) {
   .section {
     padding: 7rem 4rem;
+  }
+
+  .section--contact {
+    padding-block-end: 11rem;
   }
 }
