@@ -1,23 +1,27 @@
 export const data = {
 
   home: {
-    description: `Web developer crafting fast, accessible, and beautifully minimal digital experiences.`
+    description: `I build fast, responsive, and clean websites using HTML, CSS, and JavaScript.
+Focused on performance, simplicity, and real-world usability.`
   },
 
   about: {
     paragraphs: [
-      `Hi, I'm <span class="text--highlight">Rajesh Medudula</span> — a web developer based in Khammam. I specialize in building modern, performant web applications with a focus on clean code and thoughtful design.`,
+      `Hi, I'm <span class="text--highlight">Rajesh Medudula</span> —  a frontend-focused web developer.`,
 
-      `I've been writing code for <span class="text--highlight">1+ years</span>, working across the full stack but leaning heavily towards the front end. I care deeply about the intersection of great engineering and great user experience.`,
+      `I build clean, responsive websites using HTML, CSS, and JavaScript. My focus is on layout, performance, and creating smooth user experiences.`,
 
-      `When I'm not coding, you'll find me gaming, exploring tech, or creating content.`
+      `I’ve worked on multiple real-world UI projects, improving my skills in design implementation, responsiveness, and modern web practices.`,
+      
+      `I’m continuously learning and improving, especially in JavaScript and interactive UI development.`
     ],
 
     stats: [
-  { label: "EXPERIENCE", value: "1", suffix: "yrs", large: true },
-  { label: "PROJECTS SHIPPED", value: "12", suffix: "+", large: true },
-  { label: "CURRENTLY AT", value: "Freelance" },
-  { label: "BASED IN", value: "Khammam, IN" }
+  // { label: "EXPERIENCE", value: "1", suffix: "yrs", large: true },
+  { label: "PROJECTS BUILT", value: "12", suffix: "+", large: true },
+  { label: "CORE SKILLS", value: "HTML, CSS, JS" },
+  { label: "FOCUS", value: "Frontend / UI" },
+  { label: "LEARNING", value: "Advanced JavaScript" }
 ]
   },
 
@@ -25,18 +29,20 @@ export const data = {
     items: [
     { name: "HTML5", level: "Expert" },
     { name: "CSS3", level: "Expert" },
-    { name: "JavaScript", level: "Expert" },
     { name: "Responsive Design", level: "Expert" },
-    { name: "CSS Animation", level: "Expert" },
     { name: "Flexbox / Grid", level: "Expert" },
-    { name: "Git / GitHub", level: "Expert" },
+    { name: "CSS Animation", level: "Intermediate" },
+    // l2
+    { name: "JavaScript", level: "Intermediate" },
     { name: "DOM APIs", level: "Intermediate" },
-    { name: "Fetch / REST", level: "Proficient" },
+    // l3
+    { name: "Git / GitHub", level: "Intermediate" },
+    // { name: "Fetch / REST", level: "Proficient" },
     { name: "Figma", level: "Beginner" },
     { name: "VS Code", level: "Expert" },
-    { name: "Chrome DevTools", level: "Pr0oficient" },
+    { name: "Chrome DevTools", level: "Proficient" },
    ],
-  note: "- Hover to explore. Edit to match your actual stack."
+  note: "- Frontend developer strong in UI + layout + responsiveness"
 },
 
   projects: [
@@ -55,12 +61,14 @@ export const data = {
   ],
 
   contact: {
-    description: `I'm currently open to new opportunities. Whether it's a project, a role, or just a conversation — my inbox is always open.`,
+    description: `I’m currently available for freelance work. Also open to internship opportunities.
+    If you need a website, landing page, or UI built with clean code and attention to detail, feel free to reach out.
+    I usually respond quickly.`,
     email: "medudularajesh10@gmail.com",
     socials: [
-      { name: "GITHUB", link: "#" },
-      { name: "LINKEDIN", link: "#" },
-      { name: "TWITTER / X", link: "#" },
+      { name: "GITHUB", link: "https://github.com/rajesh-medudula" },
+      { name: "LINKEDIN", link: "https://www.linkedin.com/in/rajeshmedudula/" },
+      { name: "FRONTEND MENTOR", link: "https://www.frontendmentor.io/profile/rajesh-medudula" },
       { name: "RESUME ↓", link: "#" }
     ]
   }
