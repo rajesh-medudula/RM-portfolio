@@ -1,10 +1,12 @@
 export const data = {
+// home description
 
   home: {
     description: `I build fast, responsive, and clean websites using HTML, CSS, and JavaScript.
 Focused on performance, simplicity, and real-world usability.`
   },
 
+  // About me
   about: {
     paragraphs: [
       `Hi, I'm <span class="text--highlight">Rajesh Medudula</span> —  a frontend-focused web developer.`,
@@ -16,14 +18,17 @@ Focused on performance, simplicity, and real-world usability.`
       `I’m continuously learning and improving, especially in JavaScript and interactive UI development.`
     ],
 
+  // About me side stats
     stats: [
   // { label: "EXPERIENCE", value: "1", suffix: "yrs", large: true },
-  { label: "PROJECTS BUILT", value: "12", suffix: "+", large: true },
-  { label: "CORE SKILLS", value: "HTML, CSS, JS" },
+  // { label: "PROJECTS BUILT", value: "12", suffix: "+", large: true },
+  { label: "CORE SKILLS", value: "HTML . CSS . JS" },
   { label: "FOCUS", value: "Frontend / UI" },
   { label: "LEARNING", value: "Advanced JavaScript" }
 ]
   },
+
+  // stack skills
 
   stack: {
     items: [
@@ -45,20 +50,48 @@ Focused on performance, simplicity, and real-world usability.`
   note: "- Frontend developer strong in UI + layout + responsiveness"
 },
 
-  projects: [
-    {
-      title: "Cinemamawa",
-      desc: "OTT platform, video streaming made easy!",
-      tags: ["HTML", "CSS", "JavaScript"],
-      link: "#"
-    },
-    {
-      title: "Portfolio",
-      desc: "Personal portfolio with animations and interactions.",
-      tags: ["HTML", "CSS", "JS"],
-      link: "#"
-    }
-  ],
+// projects
+
+projects: [
+  {
+  order: 4,
+  title: "Digital Bank Landing Page",
+  desc: "Developed a responsive landing page for a digital banking product with a focus on clean layout, modern UI structure, and consistent spacing across sections. Includes responsive navigation and optimized design for different screen sizes.",
+  tags: ["HTML", "CSS"],
+  link: "https://rajesh-medudula.github.io/FM-digitalbank-landing-page/"
+},
+  {
+  order: 1,
+  title: "Fylo Data Storage Component",
+  desc: "Built an interactive data storage component with a focus on layout, visual styling, and dynamic UI behavior. Implemented a draggable progress bar using JavaScript, allowing users to adjust values in real time with immediate visual feedback.",
+  tags: ["HTML", "CSS", "JavaScript"],
+  link: "https://rajesh-medudula.github.io/FM-fylo-data-storage-component/"
+},
+  {
+  order: 5,
+  title: "Dr. A.P.J. Abdul Kalam Tribute Page",
+  desc: "Designed a clean tribute page highlighting key milestones through a structured timeline layout. Focused on typography, spacing, and visual hierarchy to present content in a clear and readable format.",
+  tags: ["HTML", "CSS"],
+  link: "https://rajesh-medudula.github.io/PV-dr-apj-tribute-page/"
+},
+
+{
+  order: 2,
+  title: "Chat App CSS Illustration",
+  desc: "Built a detailed chat application UI with a strong focus on CSS layout and visual design. Recreated a complex interface with precise spacing, gradients, and component styling, ensuring responsiveness and consistency across screen sizes.",
+  tags: ["HTML", "CSS"],
+  link: "https://rajesh-medudula.github.io/FM-chat-app-css-illustration/"
+},
+
+{
+  order: 3,
+  title: "FAQ Accordion",
+  desc: "Built an interactive FAQ accordion component using JavaScript to toggle content visibility. Focused on clean UI, smooth expand/collapse behavior, and maintaining a structured layout for better readability.",
+  tags: ["HTML", "CSS", "JavaScript"],
+  link: "https://rajesh-medudula.github.io/FM-faq-accordion/"
+},
+
+],
 
   contact: {
     description: `I’m currently available for freelance work. Also open to internship opportunities.

@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+/* webkit scroll */
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* remove default margins */
 * {
   margin: 0;
@@ -19,6 +24,8 @@ html, body {
 
 html {
   scroll-behavior: smooth;
+    scrollbar-width: none;
+
 }
 
 body {
@@ -28,6 +35,8 @@ body {
   -webkit-font-smoothing: antialiased;
   display: flex;
   flex-direction: column;
+    -ms-overflow-style: none;
+
 }
 
 /* media elements */

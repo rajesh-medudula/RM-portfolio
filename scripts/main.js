@@ -58,28 +58,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // PROJECTS
   const workContainer = document.querySelector('.work');
-  if (workContainer) {
-    workContainer.innerHTML = data.projects.map((p, i) => `
-      <div class="work__item">
-        <div class="work__index">
-          <p class="work__index-text">${String(i + 1).padStart(2, '0')}</p>
-        </div>
 
-        <div class="work__content">
-          <h3 class="work__title">${p.title}</h3>
-          <p class="work__desc">${p.desc}</p>
+if (workContainer) {
 
-          <ul class="work__tags">
-            ${p.tags.map(tag => `<li class="work__tag">${tag}</li>`).join('')}
-          </ul>
-        </div>
+  const sortedProjects = [...data.projects].sort((a, b) => a.order - b.order);
 
-        <div class="work__link">
-          <a class="work__link-arrow" href="${p.link}">↗</a>
-        </div>
-      </div>
-    `).join('');
-  }
+  workContainer.innerHTML = sortedProjects.map((p, i) => `
+  <a href="${p.link}" target="_blank" rel="noopener noreferrer" class="work__item">
+
+    <div class="work__index">
+      <p class="work__index-text">${String(i + 1).padStart(2, '0')}</p>
+    </div>
+
+    <div class="work__content">
+      <h3 class="work__title">${p.title}</h3>
+      <p class="work__desc">${p.desc}</p>
+
+      <ul class="work__tags">
+        ${p.tags.map(tag => `<li class="work__tag">${tag}</li>`).join('')}
+      </ul>
+    </div>
+
+    <div class="work__link">
+      <span class="work__link-arrow">↗</span>
+    </div>
+
+  </a>
+`).join('');
+}
 
   // CONTACT
   const contactSection = document.querySelector('.section--contact .section__container');
