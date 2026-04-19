@@ -105,7 +105,8 @@ if (workContainer) {
       <ul class="section__social">
         ${data.contact.socials.map(s => `
           <li>
-            <a class="section__social-link" href="${s.link}">${s.name}</a>
+            <a class="section__social-link" href="${s.link}" target="_blank" 
+  rel="noopener noreferrer">${s.name}</a>
           </li>
         `).join('')}
       </ul>

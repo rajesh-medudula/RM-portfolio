@@ -47,13 +47,21 @@
     'a, button, .stack__item, .work__item, .section__email--text'
   ).forEach(el => {
 
-    el.addEventListener('mouseenter', () => {
-      ring.classList.add('active');
-    });
+    document.addEventListener('mouseover', (e) => {
+  if (
+    e.target.closest('a, button, .stack__item, .work__item, .section__email--text')
+  ) {
+    ring.classList.add('active');
+  }
+});
 
-    el.addEventListener('mouseleave', () => {
-      ring.classList.remove('active');
-    });
+document.addEventListener('mouseout', (e) => {
+  if (
+    e.target.closest('a, button, .stack__item, .work__item, .section__email--text')
+  ) {
+    ring.classList.remove('active');
+  }
+});
 
   });
 

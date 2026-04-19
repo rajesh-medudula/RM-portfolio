@@ -102,7 +102,7 @@ projects: [
       { name: "GITHUB", link: "https://github.com/rajesh-medudula" },
       { name: "LINKEDIN", link: "https://www.linkedin.com/in/rajeshmedudula/" },
       { name: "FRONTEND MENTOR", link: "https://www.frontendmentor.io/profile/rajesh-medudula" },
-      { name: "RESUME ↓", link: "#" }
+      // { name: "RESUME ↓", link: "#" }
     ]
   }
 
