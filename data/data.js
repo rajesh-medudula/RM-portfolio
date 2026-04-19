@@ -22,7 +22,7 @@ Focused on performance, simplicity, and real-world usability.`
     stats: [
   // { label: "EXPERIENCE", value: "1", suffix: "yrs", large: true },
   // { label: "PROJECTS BUILT", value: "12", suffix: "+", large: true },
-  { label: "CORE SKILLS", value: "HTML . CSS . JS" },
+  { label: "CORE SKILLS", value: "HTML / CSS / JS" },
   { label: "FOCUS", value: "Frontend / UI" },
   { label: "LEARNING", value: "Advanced JavaScript" }
 ]
