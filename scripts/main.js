@@ -2,6 +2,10 @@ import './navigation.js';
 import './cursor.js';
 import { initReveal } from './reveal.js'; // IMPORTANT: export it
 import { data } from '../data/data.js';
+import { inject } from '@vercel/analytics';
+
+// Initialize Vercel Analytics
+inject();
 
 document.addEventListener('DOMContentLoaded', () => {
 
